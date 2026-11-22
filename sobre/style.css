@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(168, 168, 190);
+    color: black;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header {
+    background-color: rgb(234, 234, 105);
+    color: black;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+.logo img {
+    height: 100px;
+    width: 100px;
+    display: block;
+}
+header h1 {
+    font-size: 40px;
+    letter-spacing: 1px;
+    color: black;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.menu {
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+ }
+ .menu a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 16px;
+    border-radius: 6px;
+    transition: 0,3s;
+ }
+ .menu a:hover {
+    background-color:black;
+    color: #28663b;
+ }
+ #menu-toggle {
+    display: none;
+ }
+ .hamburguer {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+ }
+ .hamburguer span {
+    width: 28px;
+    height: 3px;
+    background-color: #28663b;
+    border-radius: 3PX;
+ }
+ main {
+    flex: 1;
+    width: 100%;
+    margin: 2 rem auto;
+    text-align: center;
+ }
+ main h2 {
+    font-size: 25px;
+    color: black;
+    margin-bottom: 2 rem;
+    padding-bottom: 0.5 rem;
+    border-bottom: 2px solid #ddd;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+ }
+ .foto {
+    margin: 1.5rem auto;
+ }
+ .foto {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+ }
+.sobre {
+    background-color: rgb(161, 161, 255);
+    padding: 2rem;
+    border-radius: 10px;
+    margin-top: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.sobre h2 {
+    color: black;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    margin-left: 0;
+}
+.sobre p {
+    margin-bottom: 16px;
+    font-size: 1rem;
+    color: #444;
+}
+.footer-container { 
+    background-color:  rgb(168, 168, 190);;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+.footer-container section {
+    flex: 1;
+    min-width: 250px;
+}
+.footer-container h3 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.footer-container a {
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.icono { 
+width: 44px;
+height: auto;
+object-fit: contain;
+}
+.creditos {
+color: white;
+background-color: black;
+width: 100%;
+display: flex;
+text-align: center;
+justify-content: center;
+border-top: white;
+padding-top: 15px ;
+flex-wrap: wrap;
+font-size: 16px;
+}
+    @media(max-width:600px) {
+        body {
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+        main {
+            width: 100%;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        } 
+        .foto {
+            margin: 1 rem auto;
+            width: 220px;
+            height: 220px;
+            margin-left: auto;
+            align-self: center;
+        }
+        .foto img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            display: block;
+        }
+    .sobre {
+        width: 100%;
+        margin: 1rem 0;
+
+            }
+
+    .header {
+    min-height: 75px;
+    }
+    .logo img {
+        width: 75px;
+        height: 55px;
+    }
+    .hamburguer{
+        display: flex;
+    }
+    .menu {
+        display: none;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        width: 100%;
+        padding: 15px;
+        background-color: white;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 5px;
+        z-index: 10;
+        box-shadow: 0 5px 8px #00000015;
+    }
+    #menu-toggle:checked ~ .menu{
+        display: flex;
+    }
+    .menu a {
+        text-align: center;
+    } 
+    section {
+        padding: 35px 6%;
+    }
+    .footer,
+    .footer-container {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+     }
+    }
+ 
