@@ -62,26 +62,15 @@ header h1 {
 main {
     padding: 40px;
     background-color: rgb(219, 178, 208);
-}
-.galeria {
-    align-items: center;
-    justify-content: center;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    max-width: 900px;
-    margin: auto;
-}
-.galeria img {
-    height: 200px;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-    transition: transform 1s, filter 1s;
-}
-.galeria img:hover {
-    transform: rotate(10deg);
-    filter: grayscale(100%);
+    flex-direction: column;
+    display: list-item;
+    font-size: 20px;
+    gap: 12px;
+  }
+
+h2 {
+  margin-top: 32px;
+  color: blue;
 }
 .creditos {
 color: white;
