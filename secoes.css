@@ -137,22 +137,6 @@ font-size: 13px;
 #menu-toggle:checked ~ .menu {
 display: flex;
 }
-.galeria {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 16px;
-    padding: 16px;
-}
-.galeria img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    display: block;
-}
-.galeria p {
-    overflow-wrap: anywhere;
-    font-size: 0.9rem;
-}
 footer .creditos {
     padding: 16px;
     text-align: center;
